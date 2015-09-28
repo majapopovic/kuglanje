@@ -1,0 +1,19 @@
+CC=gcc
+
+all: player_test.o runall.o unity.o unity_fixture.o
+
+.PHONY: player_test.o runall.o unity.o unity_fixture.o
+
+player_test.o:
+	$(CC) player_test.c -o ../build/player_test.o
+
+runall.o:
+	$(CC) runall.c -o ../build/runall.o
+
+unity.o:
+	$(CC) ../../unity/unity.c -o ../build/unity.o
+
+unity_fixture.o:
+	$(CC) ../../unity/unity_fixture.c -o ../build/unity_fixture.o
+
+

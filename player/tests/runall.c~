@@ -8,5 +8,5 @@ RUN_TEST_GROUP(PlayerTest);
 
 int main(int argc,char* argv[])
 {
-return UnityMain(argc, argv, RunAllTests);
+return UnityMain(argc, (const char**) argv, RunAllTests);
 }

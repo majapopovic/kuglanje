@@ -9,7 +9,7 @@ TEST_GROUP(PlayerTest);
 
 TEST_GROUP_RUNNER(PlayerTest)
 {
-RUN_TEST_CASE(PlayerTest, Allocated);
+TEST(PlayerTest, Allocated);
 }
 
 
